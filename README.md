@@ -1,49 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Wild Oasis – Hotel Booking Website
 
-## Getting Started
+A modern, responsive hotel booking website that allows users to explore cabins, view availability, and manage reservations through a seamless user experience.
+This project focuses on building a production-style customer-facing application using modern React frameworks, server-side rendering, and real-time data handling.
 
-First, run the development server:
+Features:
+* Browse available cabins with detailed information
+* Check availability and booking dates
+* Reserve cabins through an interactive booking flow
+* User authentication (login/signup with Google if implemented)
+* View and manage personal reservations
+* Fast performance with server-side rendering
+* Fully responsive, mobile-first design
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tech Stack:
+* Framework: Next.js
+* Frontend: React
+* Styling: Tailwind CSS
+* Backend / Database: Supabase
+* Authentication: Supabase Auth / OAuth
+* Deployment: Vercel
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Architecture & Key Concepts:
 
-## Learn More
+* Server-Side Rendering (SSR):
+Improves performance and SEO by pre-rendering pages on the server.
 
-To learn more about Next.js, take a look at the following resources:
+* Full-Stack Integration with Supabase:
+Handles authentication, database, and real-time updates in a unified backend.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Separation of Concerns:
+UI components, business logic, and data fetching are cleanly separated.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+* Authentication & Protected Routes:
+Ensures only logged-in users can manage bookings.
 
-## Environment Variables
+* Reusable Component System:
+Built scalable UI components for listings, booking forms, and layouts.
 
-This app requires Supabase and Google OAuth secrets to run. Create a `.env.local` with:
-
-```env
-SUPABASE_URL=your-supabase-url
-SUPABASE_KEY=your-supabase-service-role-key
-AUTH_GOOGLE_ID=...
-AUTH_GOOGLE_SECRET=...
-```
-
-For production (Netlify/Vercel), set the same variables in your site environment settings.
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* Modern Deployment Pipeline:
+Deployed on Vercel for fast, globally distributed delivery and scalability
